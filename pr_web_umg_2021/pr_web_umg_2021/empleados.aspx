@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="empleados.aspx.cs" Inherits="pr_web_umg_2021.empleados" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
         <div class="jumbotron">
         
@@ -29,8 +30,6 @@
         <br />
         <br />
         
-
-
         <asp:GridView ID="grid_empleados" runat="server" AutoGenerateColumns="False" CssClass="table-condensed" DataKeyNames="id,id_puesto" OnSelectedIndexChanged="grid_empleados_SelectedIndexChanged" OnRowDeleting="grid_empleados_RowDeleting">
             <Columns>
                 <asp:TemplateField ShowHeader="False">
